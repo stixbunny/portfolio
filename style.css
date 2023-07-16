@@ -41,10 +41,13 @@ a:hover {
 #socials {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
+  justify-items: center;
 }
 
-.social {
-  justify-self: center;
-  align-self: center;
+#social a {
+  width: fit-content;
+}
+
+i {
+  color: #ffffff;
 }
