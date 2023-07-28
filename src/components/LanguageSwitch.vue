@@ -30,11 +30,4 @@ watch(isSpanish, async (newState) => {
   />
 </template>
 
-<style scoped>
-button {
-  background-color: steelblue;
-}
-button.active {
-  background-color: coral;
-}
-</style>
+<style scoped></style>
