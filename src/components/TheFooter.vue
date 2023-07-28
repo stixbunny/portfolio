@@ -9,8 +9,8 @@ const url = "https://github.com/stixbunny/portfolio";
 <template>
   <footer>
     <p>{{ t('footer.created') }}</p>
-    <i18n-t keypath="footer.learn" tag="p" for="her">
-      <a :href="url" target="_blank">{{ $t('here') }}</a>
+    <i18n-t keypath="footer.learn" tag="p" for="here" scope="global">
+      <a :href="url" target="_blank">{{ $t('footer.here') }}</a>
     </i18n-t>
   </footer>
 </template>
