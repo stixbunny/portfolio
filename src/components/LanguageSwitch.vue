@@ -1,29 +1,33 @@
 <script setup>
-import { computed, ref } from 'vue';
+import { ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
+import ModeSwitch from './ModeSwitch.vue';
 
 const { locale } = useI18n({ useScope: 'global' });
 const isSpanish = ref(true);
-const computedLocale = computed(() => {
-  return locale.value.toUpperCase();
-});
-function switchButton() {
-  if (isSpanish.value) {
-    isSpanish.value = false;
-    locale.value = 'en';
-  } else {
-    isSpanish.value = true;
-    locale.value = 'es';
-  }
+const onText = 'ES';
+const offText = 'EN';
+
+function switchState() {
+  isSpanish.value = !isSpanish.value;
 }
+
+watch(isSpanish, async (newState) => {
+  if (newState) {
+    locale.value = 'es';
+  } else {
+    locale.value = 'en';
+  }
+});
 </script>
 
 <template>
-  <div>
-    <button class="switch" :class="{ active: isSpanish }" @click="switchButton">
-      {{ computedLocale }}
-    </button>
-  </div>
+  <ModeSwitch
+    :on-text="onText"
+    :off-text="offText"
+    :default-state="isSpanish"
+    @clicked="switchState"
+  />
 </template>
 
 <style scoped>

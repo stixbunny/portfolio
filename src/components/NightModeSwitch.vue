@@ -19,9 +19,12 @@ function switchState() {
 </script>
 
 <template>
-  <ModeSwitch :on-text="onText" :off-text="offText" :default-state="nightMode" @clicked="switchState" />
+  <ModeSwitch
+    :on-text="onText"
+    :off-text="offText"
+    :default-state="nightMode"
+    @clicked="switchState"
+  />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
