@@ -2,8 +2,6 @@
 import { useI18n } from 'vue-i18n';
 import LanguageSwitch from './LanguageSwitch.vue';
 import NightModeSwitch from './NightModeSwitch.vue';
-import ModeSwitch from './ModeSwitch.vue';
-import TestSwitch from './TestSwitch.vue';
 
 const { t } = useI18n();
 </script>
@@ -29,8 +27,6 @@ const { t } = useI18n();
     <div>
       <LanguageSwitch />
       <NightModeSwitch />
-      <ModeSwitch />
-      <TestSwitch />
     </div>
   </nav>
 </template>
