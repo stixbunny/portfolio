@@ -1,6 +1,9 @@
 <script setup>
-import { computed } from 'vue';
 import { useDark } from '@vueuse/core';
+import ModeSwitch from './ModeSwitch.vue';
+
+const onText = '🌚';
+const offText = '🌞';
 
 const nightMode = useDark({
   selector: 'html',
@@ -9,27 +12,16 @@ const nightMode = useDark({
   valueLight: 'light',
   disableTransition: false,
 });
-const computedMode = computed(() => {
-  return nightMode.value ? '🌚' : '🌞';
-});
-function switchButton() {
+
+function switchState() {
   nightMode.value = !nightMode.value;
 }
 </script>
 
 <template>
-  <div>
-    <button class="switch" :class="{ active: nightMode }" @click="switchButton">
-      {{ computedMode }}
-    </button>
-  </div>
+  <ModeSwitch :on-text="onText" :off-text="offText" :default-state="nightMode" @clicked="switchState" />
 </template>
 
 <style scoped>
-button {
-  background-color: lightyellow;
-}
-button.active {
-  background-color: steelblue;
-}
+
 </style>
