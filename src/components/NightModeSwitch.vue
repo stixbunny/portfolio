@@ -24,6 +24,8 @@ function switchState() {
     :off-text="offText"
     :default-state="nightMode"
     @clicked="switchState"
+    on-color="lightblue"
+    off-color="lightyellow"
   />
 </template>
 

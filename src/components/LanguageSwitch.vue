@@ -27,6 +27,8 @@ watch(isSpanish, async (newState) => {
     :off-text="offText"
     :default-state="isSpanish"
     @clicked="switchState"
+    on-color="lightcoral"
+    off-color="lightblue"
   />
 </template>
 
