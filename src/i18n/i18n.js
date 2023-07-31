@@ -11,7 +11,7 @@ const messages = {
     home: {
       milenko: 'Milenko',
       webdeveloper: 'web developer',
-      welcome: "Welcome to my website, my name is {0} and I'm a {0}",
+      welcome: "Welcome to my website, my name is {name} and I'm a {title}",
     },
     about: {
       title: 'Now a little bit about me...',
@@ -28,8 +28,12 @@ const messages = {
       problemsolvingdesc:
         "I'm a thinker at heart and I love to spend time trying to solve new challenges. I've been doing it to make it where I am today and I'll keep doing it in the future.",
     },
-    portfolio: {},
-    contact: {},
+    portfolio: {
+      title: 'Projects I\'ve done',
+    },
+    contact: {
+      title: 'Interested? You can find me around these places'
+    },
     footer: {
       created: 'Made with Vue, Vue-i18n, and brought to you by Milenko Castillo.',
       learn: 'You can learn more about how I made this website {0}.',
@@ -46,7 +50,7 @@ const messages = {
     home: {
       milenko: 'Milenko',
       webdeveloper: 'desarrollador web',
-      welcome: 'Bienvenido a mi sitio, mi nombre es {0} y soy {0}.',
+      welcome: 'Bienvenido a mi sitio, mi nombre es {name} y soy {title}',
     },
     about: {
       title: 'Ahora un poco acerca de mí...',
@@ -63,8 +67,12 @@ const messages = {
       problemsolvingdesc:
         "Soy en escencia un pensador y me encanta pasar mi tiempo resolviendo nuevos desafíos. Lo he estado haciendo para llegar donde estoy y lo seguiré haciendo en el futuro.",
     },
-    portfolio: {},
-    contact: {},
+    portfolio: {
+      title: 'Proyectos que he realizado',
+    },
+    contact: {
+      title: '¿Interesado? Puedes encontrarme por aquí'
+    },
     footer: {
       created: 'Hecho con Vue, Vue-i18n, y traido hasta ti por Milenko Castillo.',
       learn: 'Puedes aprender más acerca de como creé este sitio {0}.',
