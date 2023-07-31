@@ -16,6 +16,9 @@ const url = "https://github.com/stixbunny/portfolio";
 </template>
 
 <style scoped>
+footer {
+  text-align: right;
+}
 p {
   font-size: 0.8rem;
 }

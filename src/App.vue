@@ -5,12 +5,9 @@ import TheMain from './components/TheMain.vue';
 </script>
 
 <template>
-  <header>
-    <TheNav />
-  </header>
+  <TheNav />
   <TheMain />
   <TheFooter />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
