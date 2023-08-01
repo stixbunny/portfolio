@@ -16,8 +16,7 @@ import ContactSection from './ContactSection.vue';
 
 <style scoped>
 main {
-  max-width: 1000px;
-  margin: 0 auto;
+  padding-inline: 1rem;
 }
 main > * + * {
   margin-block: 1rem;

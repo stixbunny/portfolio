@@ -8,18 +8,24 @@ const url = "https://github.com/stixbunny/portfolio";
 
 <template>
   <footer>
-    <p>{{ t('footer.created') }}</p>
-    <i18n-t keypath="footer.learn" tag="p" for="here" scope="global">
-      <a :href="url" target="_blank">{{ $t('footer.here') }}</a>
-    </i18n-t>
+    <div>
+      <p>{{ t('footer.created') }}</p>
+      <i18n-t keypath="footer.learn" tag="p" for="here" scope="global">
+        <a :href="url" target="_blank">{{ $t('footer.here') }}</a>
+      </i18n-t>
+    </div>
   </footer>
 </template>
 
 <style scoped>
 footer {
-  text-align: right;
+  margin: 0 auto;
+  
   background-color: var(--color-subtle-background);
   border-top:1px solid var(--color-text);
+}
+div {
+  text-align: right;
 }
 p {
   font-size: var(--small-font);

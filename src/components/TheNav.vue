@@ -55,8 +55,12 @@ ul {
 ul li {
   display: inline-block;
 }
-li {
-  padding-inline: 0.8rem;
+
+li + li {
+  margin-left: 1rem;
+}
+a {
+  font-weight: 500;
 }
 a {
   position: relative;
