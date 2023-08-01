@@ -19,4 +19,7 @@ main {
   max-width: 1000px;
   margin: 0 auto;
 }
+main > * + * {
+  margin-block: 1rem;
+}
 </style>

@@ -59,7 +59,7 @@ console.log(`off text = ${props.offText}`);
 .container {
   display: flex;
   width: var(--switch-container-width);
-  color: black;
+  color: var(--light-text) !important;
 }
 /* Hidden input checkbox */
 .input {
@@ -88,7 +88,7 @@ console.log(`off text = ${props.offText}`);
   border-radius: var(--switch-size);
   background-color: v-bind("props.offColor");
   transition: background-color 0.25s ease-in-out;
-  border: 1px solid black;
+  border: 1px solid var(--light-text);
 }
 /* Switch circle */
 .switch::before {
@@ -100,9 +100,9 @@ console.log(`off text = ${props.offText}`);
   width: calc(var(--switch-size) - 4px);
   /* Make the inner circle fully rounded */
   border-radius: 9999px;
-  background-color: white;
+  background-color: aliceblue;
   transition: transform 0.375s ease-in-out;
-  border: 1px solid black;
+  border: 1px solid var(--light-text);
 }
 /* Switch when checked */
 .input:checked + .switch {
@@ -115,5 +115,11 @@ console.log(`off text = ${props.offText}`);
   /* border-color: v-bind("props.onColor"); */
   /* Move the inner circle to the right */
   transform: translateX(calc(var(--switch-container-width) - var(--switch-size)));
+}
+/* Vertical align text */
+.on-text, .off-text {
+  /* display: grid; */
+  align-self: baseline;
+  line-height: 1.5;
 }
 </style>

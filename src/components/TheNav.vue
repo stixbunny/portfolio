@@ -9,7 +9,7 @@ const { t } = useI18n();
 <template>
   <header>
     <nav>
-      <div>
+      <div id="sections">
         <ul>
           <li>
             <a href="#home">{{ t('nav.home') }}</a>
@@ -25,7 +25,7 @@ const { t } = useI18n();
           </li>
         </ul>
       </div>
-      <div>
+      <div id="switches">
         <LanguageSwitch />
         <NightModeSwitch />
       </div>
@@ -34,8 +34,19 @@ const { t } = useI18n();
 </template>
 
 <style scoped>
+header {
+  background-color: var(--color-subtle-background);
+  border-bottom: 1px solid var(--color-text);
+}
 nav {
-  position: sticky;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse wrap-reverse;
+  gap: 0.5rem;
+}
+#sections {
+  order: 1;
 }
 ul {
   list-style-type: none;
@@ -45,6 +56,33 @@ ul li {
   display: inline-block;
 }
 li {
-  padding-inline: 1rem;
+  padding-inline: 0.8rem;
+}
+a {
+  position: relative;
+}
+a:visited {
+  color: inherit;
+}
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--color-accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#switches {
+  justify-self: right;
+  display: flex;
+  gap: 1rem;
 }
 </style>

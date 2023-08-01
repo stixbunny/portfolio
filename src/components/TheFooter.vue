@@ -18,8 +18,16 @@ const url = "https://github.com/stixbunny/portfolio";
 <style scoped>
 footer {
   text-align: right;
+  background-color: var(--color-subtle-background);
+  border-top:1px solid var(--color-text);
 }
 p {
-  font-size: 0.8rem;
+  font-size: var(--small-font);
+}
+a:hover::before {
+  content: '👉 ';
+}
+a:hover::after {
+  content: ' 💯'
 }
 </style>

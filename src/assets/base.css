@@ -4,22 +4,27 @@
 
   --light-text: hsl(105, 60%, 4%);
   --light-background: hsl(108, 56%, 93%);
+  --light-subtle-background: color-mix(in srgb, var(--light-text) 10%, transparent) ;
   --light-primary: hsl(138, 56%, 64%);
   --light-secondary: hsl(290, 55%, 87%);
   --light-accent: hsl(318, 56%, 47%);
 
   --dark-text: hsl(108, 56%, 93%);
   --dark-background: hsl(105, 60%, 4%);
+  --dark-subtle-background: color-mix(in srgb, var(--dark-text) 10%, transparent) ;
   --dark-primary: hsl(138, 56%, 64%);
   --dark-secondary: hsl(291, 54%, 7%);
   --dark-accent: hsl(318, 56%, 77%);
+
+  --small-font: 0.7rem;
 }
 
 /* semantic color variables for this project */
 :root {
   --color-text: var(--light-text);
   --color-background: var(--light-background);
-  --color-primary: var(var(--light-primary));
+  --color-subtle-background: var(--light-subtle-background) ;
+  --color-primary: var(--light-primary);
   --color-secondary: var(--light-secondary);
   --color-accent: var(--light-accent);
 }
@@ -27,7 +32,9 @@
 [color-scheme='dark'] {
   --color-text: var(--dark-text);
   --color-background: var(--dark-background);
-  --color-primary: var(var(--dark-primary));
+  
+  --color-subtle-background: var(--dark-subtle-background) ;
+  --color-primary: var(--dark-primary);
   --color-secondary: var(--dark-secondary);
   --color-accent: var(--dark-accent);
 }
