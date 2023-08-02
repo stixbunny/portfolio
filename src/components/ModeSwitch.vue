@@ -80,6 +80,7 @@ console.log(`off text = ${props.offText}`);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  align-content: center;
   justify-items: center;
   position: relative;
   height: var(--switch-size);
@@ -118,8 +119,5 @@ console.log(`off text = ${props.offText}`);
 }
 /* Vertical align text */
 .on-text, .off-text {
-  /* display: grid; */
-  align-self: baseline;
-  line-height: 1.5;
 }
 </style>

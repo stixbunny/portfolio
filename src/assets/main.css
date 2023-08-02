@@ -1,7 +1,7 @@
 @import './base.css';
 
 :root{
-  --switch-container-width: 50px;
+  --switch-container-width: 45px;
   --max-width-site: 1280px;
   --max-width-content: 1000px;
 }
