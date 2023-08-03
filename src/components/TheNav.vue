@@ -2,29 +2,46 @@
 import { useI18n } from 'vue-i18n';
 import LanguageSwitch from './LanguageSwitch.vue';
 import NightModeSwitch from './NightModeSwitch.vue';
+import { useToggle } from '@vueuse/core';
 
 const { t } = useI18n();
+const [isMenuOpen, toggle] = useToggle();
+
+function toggleMenu() {
+  toggle();
+}
 </script>
 
 <template>
   <header>
-    <nav>
-      <div id="sections">
-        <ul>
-          <li>
-            <a href="#home">{{ t('nav.home') }}</a>
-          </li>
-          <li>
-            <a href="#about">{{ t('nav.about') }}</a>
-          </li>
-          <li>
-            <a href="#portfolio">{{ t('nav.portfolio') }}</a>
-          </li>
-          <li>
-            <a href="#contact">{{ t('nav.contact') }}</a>
-          </li>
-        </ul>
-      </div>
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="main-nav"
+      :aria-expanded="isMenuOpen"
+      @click="toggleMenu"
+    >
+      <svg fill="var(--color-text)" class="hamburger-menu" viewBox="0 0 100 100" width="25">
+        <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+      </svg>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav id="main-nav" :data-visible="isMenuOpen">
+      <ul id="sections">
+        <li>
+          <a href="#home">{{ t('nav.home') }}</a>
+        </li>
+        <li>
+          <a href="#about">{{ t('nav.about') }}</a>
+        </li>
+        <li>
+          <a href="#portfolio">{{ t('nav.portfolio') }}</a>
+        </li>
+        <li>
+          <a href="#contact">{{ t('nav.contact') }}</a>
+        </li>
+      </ul>
       <div id="switches">
         <LanguageSwitch />
         <NightModeSwitch />
@@ -38,31 +55,27 @@ header {
   background-color: var(--color-subtle-background);
   border-bottom: 1px solid var(--color-text);
 }
-nav {
+#main-nav {
+  z-index: 1000;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-flow: row-reverse wrap-reverse;
-  gap: 0.5rem;
+  flex-direction: row;
+  --gap: 1rem;
+  gap: var(--gap);
+}
+.mobile-nav-toggle {
+  display: none;
 }
 #sections {
-  order: 1;
-}
-ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
   padding: 0;
-}
-ul li {
-  display: inline-block;
-}
-
-li + li {
-  margin-left: 1rem;
+  gap: var(--gap);
 }
 a {
   font-weight: 500;
-}
-a {
   position: relative;
 }
 a:visited {
@@ -87,6 +100,49 @@ a:hover::after {
 #switches {
   justify-self: right;
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  gap: var(--gap);
+}
+@media (max-width: 35em) {
+  header {
+    padding-block: 1.75rem !important;
+  }
+  #main-nav {
+    position: fixed;
+    inset: 0 0 0 60%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: min(30vh, 10rem) 2em;
+    background: var(--color-background);
+    border-left: 1px solid var(--color-text);
+    --gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+  #main-nav[data-visible='true'] {
+    transform: translate(0%);
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background: transparent;
+    border: 1px solid var(--color-text);
+    border-radius: 5px;
+    width: 0.6rem;
+    aspect-ratio: 1;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .hamburger-menu {
+    display: block;
+    /* width: 250; */
+  }
+  #sections,
+  #switches {
+    flex-direction: column;
+  }
 }
 </style>
