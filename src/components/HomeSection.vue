@@ -27,16 +27,18 @@ const { t } = useI18n();
 
 <style scoped>
 #home {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
-  flex-flow: row wrap;
+  align-content: center;
+  gap: 1rem;
 }
 #title {
-  /* flex-grow: 1; */
+  grid-column: 1 / 2;
 }
 #profile-pic {
+  grid-column: 2 / 3;
   position: relative;
-  display: inline-block;
 }
 h1 {
   font-size: 2.5rem;
@@ -49,6 +51,7 @@ span {
 }
 /* Name */
 span:first-child {
+  display: inline-block;
   font-size: 5rem;
   --bg-size: 300%;
   --color-one: hsl(54, 100%, 70%);
@@ -75,29 +78,24 @@ span:first-child {
 }
 /* Title */
 span:nth-child(2) {
-  /* display: block; */
+  text-wrap: nowrap;
   font-size: 3rem;
   color: var(--color-secondary);
   text-decoration-line: underline;
   text-decoration-color: var(--color-accent);
   text-decoration-style: wavy;
-  /* text-shadow:
-    1px 1px 1px var(--color-text),
-    1px -1px 1px var(--color-text),
-   -1px  1px 1px var(--color-text),
-   -1px -1px 1px var(--color-text); */
 }
 svg {
   position: absolute;
   scale: 80%;
-  /* width: max-content; */
   display: block;
   margin: auto;
   fill: var(--color-accent);
   z-index: -1;
 }
 img {
-  /* display: block; */
   width: 100%;
+  min-width: 100px;
+  max-width: 200px;
 }
 </style>
