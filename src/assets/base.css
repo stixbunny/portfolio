@@ -3,18 +3,18 @@
   color-scheme: light dark;
 
   --light-text: hsl(105, 60%, 4%);
-  --light-background: hsl(108, 56%, 93%);
+  --light-background: hsl(68, 100%, 95%);
   --light-subtle-background: color-mix(in srgb, var(--light-text) 10%, transparent) ;
-  --light-primary: hsl(138, 56%, 64%);
-  --light-secondary: hsl(290, 55%, 87%);
-  --light-accent: hsl(318, 56%, 47%);
+  --light-primary: hsl(172, 100%, 85%);
+  --light-secondary: hsl(311, 100%, 93%);
+  --light-accent: hsl(298, 100%, 66%);
 
-  --dark-text: hsl(108, 56%, 93%);
-  --dark-background: hsl(105, 60%, 4%);
+  --dark-text: hsl(68, 100%, 95%);
+  --dark-background: hsl(36, 12%, 8%);
   --dark-subtle-background: color-mix(in srgb, var(--dark-text) 10%, transparent) ;
-  --dark-primary: hsl(138, 56%, 64%);
-  --dark-secondary: hsl(291, 54%, 7%);
-  --dark-accent: hsl(318, 56%, 77%);
+  --dark-primary: hsl(172, 11%, 26%);
+  --dark-secondary: hsl(321, 28%, 18%);
+  --dark-accent: hsl(297, 100%, 96%);
 
   --small-font: 0.7rem;
 }
