@@ -29,11 +29,16 @@ a:visited {
   color: inherit;
 }
 
-section {
-  margin-inline: 2rem;
+section > h1 {
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  text-wrap: balance;
 }
 
-section {
-  border: 2px solid var(--color-primary);
-  border-radius: 5px;
+@media (max-width: 35em) {
+  section > h1 {
+    text-align: center;
+  }
 }
