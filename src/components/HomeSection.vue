@@ -8,11 +8,20 @@ const { t } = useI18n();
   <section id="home">
     <div id="title">
       <i18n-t keypath="home.welcome" tag="h1" scope="global">
+        <template v-slot:welcome1>
+          <span>{{ t('home.welcome1') }}</span>
+        </template>
+        <template v-slot:welcome2>
+          <span>{{ t('home.welcome2') }}</span>
+        </template>
         <template v-slot:name>
-          <span>{{ t('home.milenko') }}</span>
+          <span id="my-name">{{ t('home.milenko') }}</span>
+        </template>
+        <template v-slot:welcome3>
+          <span>{{ t('home.welcome3') }}</span>
         </template>
         <template v-slot:title>
-          <span>{{ t('home.webdeveloper') }}</span>
+          <span id="my-title">{{ t('home.webdeveloper') }}</span>
         </template>
       </i18n-t>
     </div>
@@ -28,31 +37,33 @@ const { t } = useI18n();
 <style scoped>
 #home {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  align-content: center;
+  justify-content: center;
   gap: 1rem;
 }
 #title {
-  grid-column: 1 / 2;
+  justify-self: center;
 }
 #profile-pic {
-  grid-column: 2 / 3;
+  justify-self: center;
   position: relative;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1;
   text-wrap: balance;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 span {
-  font-weight: bold;
+  display: block;
+  font-weight: 500;
+  text-align: center;
 }
 /* Name */
-span:first-child {
-  display: inline-block;
+#my-name {
   font-size: 5rem;
+  /* line-height: 4.5rem; */
   --bg-size: 300%;
   --color-one: hsl(54, 100%, 70%);
   --color-two: hsl(184, 100%, 70%);
@@ -69,7 +80,7 @@ span:first-child {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: move-bg 8s infinite linear;
+  animation: move-bg 15s infinite linear;
 }
 @keyframes move-bg {
   to {
@@ -77,25 +88,42 @@ span:first-child {
   }
 }
 /* Title */
-span:nth-child(2) {
+#my-title {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+}
+#my-name,
+#my-title {
+  font-style: italic;
+  text-align: center !important;
+  font-weight: bold;
   text-wrap: nowrap;
-  font-size: 3rem;
-  color: var(--color-secondary);
-  text-decoration-line: underline;
-  text-decoration-color: var(--color-accent);
-  text-decoration-style: wavy;
 }
 svg {
   position: absolute;
   scale: 80%;
   display: block;
   margin: auto;
-  fill: var(--color-accent);
+  fill: var(--color-primary);
   z-index: -1;
 }
 img {
   width: 100%;
   min-width: 100px;
   max-width: 200px;
+}
+@media (min-width: 35em) {
+  #home {
+    grid-template-columns: 2fr 1fr;
+  }
+  #title {
+    grid-column: 1 / 2;
+    justify-self: center;
+  }
+  #profile-pic {
+    grid-column: 2 / 3;
+    justify-self: center;
+    position: relative;
+  }
 }
 </style>

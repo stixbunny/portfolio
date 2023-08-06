@@ -11,7 +11,10 @@ const messages = {
     home: {
       milenko: 'Milenko',
       webdeveloper: 'web developer',
-      welcome: "Welcome to my website, my name is {name} and I'm a {title}",
+      welcome: "{welcome1}{welcome2}{name}{welcome3}{title}",
+      welcome1: "Welcome to my website, ",
+      welcome2: "my name is ",
+      welcome3: " and I'm a ",
     },
     about: {
       title: 'Now a little bit about me...',
@@ -50,7 +53,10 @@ const messages = {
     home: {
       milenko: 'Milenko',
       webdeveloper: 'desarrollador web',
-      welcome: 'Bienvenido a mi sitio, mi nombre es {name} y soy {title}',
+      welcome: '{welcome1}{welcome2}{name}{welcome3}{title}',
+      welcome1: "Bienvenido a mi sitio, ",
+      welcome2: " mi nombre es ",
+      welcome3: " y soy ",
     },
     about: {
       title: 'Ahora un poco acerca de mí...',
