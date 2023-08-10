@@ -27,5 +27,7 @@ const { t } = useI18n();
 </template>
 
 <style scoped>
-
+ul {
+  background: var(--color-secondary);
+}
 </style>

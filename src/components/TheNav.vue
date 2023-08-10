@@ -1,7 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
-import LanguageSwitch from './LanguageSwitch.vue';
-import NightModeSwitch from './NightModeSwitch.vue';
+import LanguageSwitch from './UI/LanguageSwitch.vue';
+import NightModeSwitch from './UI/NightModeSwitch.vue';
 import { useToggle } from '@vueuse/core';
 
 const { t } = useI18n();
@@ -52,8 +52,8 @@ function toggleMenu() {
 
 <style scoped>
 header {
-  background-color: var(--color-subtle-background);
-  border-bottom: 1px solid var(--color-text);
+  background-color: var(--color-secondary);
+  border-block: 1px solid var(--color-text);
 }
 #main-nav {
   z-index: 1000;

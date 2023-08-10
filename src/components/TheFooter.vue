@@ -20,9 +20,8 @@ const url = "https://github.com/stixbunny/portfolio";
 <style scoped>
 footer {
   margin: 0 auto;
-  
   background-color: var(--color-subtle-background);
-  border-top:1px solid var(--color-text);
+  border-block:1px solid var(--color-text);
 }
 div {
   text-align: right;

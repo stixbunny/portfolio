@@ -1,8 +1,8 @@
 <script setup>
-import HomeSection from './HomeSection.vue';
-import AboutSection from './AboutSection.vue';
-import PortfolioSection from './PortfolioSection.vue';
-import ContactSection from './ContactSection.vue';
+import HomeSection from './sections/HomeSection.vue';
+import AboutSection from './sections/AboutSection.vue';
+import PortfolioSection from './sections/PortfolioSection.vue';
+import ContactSection from './sections/ContactSection.vue';
 </script>
 
 <template>

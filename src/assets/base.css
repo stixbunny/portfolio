@@ -3,11 +3,11 @@
   color-scheme: light dark;
 
   --light-text: hsl(105, 60%, 4%);
-  --light-background: hsl(68, 100%, 95%);
+  --light-background: #fcfcfb;
   --light-subtle-background: color-mix(in srgb, var(--light-text) 10%, transparent) ;
-  --light-primary: hsl(172, 100%, 85%);
-  --light-secondary: hsl(311, 100%, 93%);
-  --light-accent: hsl(298, 100%, 66%);
+  --light-primary: #BBFFEC;
+  --light-secondary: #FFECBB;
+  --light-accent: #ECBBFF;
 
   --dark-text: hsl(68, 100%, 95%);
   --dark-background: hsl(36, 12%, 8%);
