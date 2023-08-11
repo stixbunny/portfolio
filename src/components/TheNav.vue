@@ -106,6 +106,8 @@ a:hover::after {
 @media (max-width: 35em) {
   header {
     padding-block: 1.75rem !important;
+    display: flex;
+    align-items: center;
   }
   #main-nav {
     position: fixed;
@@ -126,19 +128,45 @@ a:hover::after {
     display: block;
     position: absolute;
     z-index: 9999;
-    background: transparent;
+    background: var(--color-background);
     border: 1px solid var(--color-text);
     border-radius: 5px;
-    width: 0.6rem;
+    min-width: min-content;
     aspect-ratio: 1;
-    top: 0.5rem;
     right: 0.5rem;
-    padding: 0 !important;
+    padding: 0.2rem !important;
     margin: 0 !important;
+  }
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background: var(--color-primary);
+    .hamburger-menu .line {
+      transition:
+        y 175ms ease-in,
+        rotate 175ms ease-in 175ms,
+        opacity 0ms 175ms;
+    }
+    .hamburger-menu :is(.top, .bottom) {
+      y: 45;
+    }
+    .hamburger-menu .top {
+      rotate: 45deg;
+    }
+    .hamburger-menu .middle {
+      opacity: 0;
+    }
+    .hamburger-menu .bottom {
+      rotate: -45deg;
+    }
   }
   .hamburger-menu {
     display: block;
-    /* width: 250; */
+  }
+  .hamburger-menu .line {
+    transition:
+      y 175ms ease-in 175ms,
+      rotate 175ms ease-in,
+      opacity 0ms 175ms;
+    transform-origin: center;
   }
   #sections,
   #switches {
