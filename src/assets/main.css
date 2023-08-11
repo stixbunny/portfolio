@@ -35,12 +35,13 @@ section {
   row-gap: 1rem;
 }
 section > h1 {
+  max-width: calc(var(--max-width-content)* 0.6);
   font-size: var(--font-heading);
+  text-wrap: balance;
   background: var(--color-primary);
   border-radius: 1000px;
   border: 1px solid var(--color-text);
   padding: 0.5rem;
-  text-wrap: balance;
 }
 
 h2 {
