@@ -46,14 +46,14 @@ const { t } = useI18n();
   justify-self: center;
 }
 #profile-pic {
+  width: 100%;
   justify-self: center;
   position: relative;
 }
 h1 {
-  font-size: 2rem;
+  font-size: var(--font-l);
   line-height: 1;
   text-wrap: balance;
-  /* font-weight: bold; */
 }
 span {
   display: block;
@@ -62,8 +62,7 @@ span {
 }
 /* Name */
 #my-name {
-  font-size: 5rem;
-  /* line-height: 4.5rem; */
+  font-size: var(--font-xxl);
   --bg-size: 300%;
   --color-one: hsl(54, 100%, 70%);
   --color-two: hsl(184, 100%, 70%);
@@ -89,8 +88,13 @@ span {
 }
 /* Title */
 #my-title {
-  font-size: 2.5rem;
+  font-size: var(--font-xl);
   color: var(--color-accent);
+  /* background: var(--color-secondary); */
+  /* border: 1px solid var(--color-text); */
+  /* border-radius: 1000px; */
+  /* padding: 0.5rem; */
+  /* margin-top: 0.5rem; */
 }
 #my-name,
 #my-title {
@@ -104,13 +108,15 @@ svg {
   scale: 80%;
   display: block;
   margin: auto;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
   fill: var(--color-primary);
   z-index: -1;
 }
 img {
   width: 100%;
   min-width: 100px;
-  max-width: 200px;
+  border-radius: 50%;
 }
 @media (min-width: 35em) {
   #home {
@@ -124,6 +130,16 @@ img {
     grid-column: 2 / 3;
     justify-self: center;
     position: relative;
+  }
+}
+</style>
+
+<style>
+[color-scheme='light'] {
+  #my-name,
+  #my-title {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-text);
   }
 }
 </style>

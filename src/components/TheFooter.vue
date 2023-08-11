@@ -27,7 +27,7 @@ div {
   text-align: right;
 }
 p {
-  font-size: var(--small-font);
+  font-size: var(--font-small);
 }
 a:hover::before {
   content: '👉 ';
