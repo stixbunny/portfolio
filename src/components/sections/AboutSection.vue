@@ -7,7 +7,8 @@ const { t } = useI18n();
 <template>
   <section id="about">
     <h1>{{ t('about.title') }}</h1>
-    <p>{{ t('about.description') }}</p>
+    <p>{{ t('about.description1') }}</p>
+    <p>{{ t('about.description2') }}</p>
     <h2>{{ t('about.amongsoftskills') }}</h2>
     <ul>
       <li>
