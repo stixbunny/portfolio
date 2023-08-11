@@ -49,6 +49,7 @@ const { t } = useI18n();
   width: 100%;
   justify-self: center;
   position: relative;
+  z-index: -1;
 }
 h1 {
   font-size: var(--font-l);
@@ -117,6 +118,7 @@ img {
   width: 100%;
   min-width: 100px;
   border-radius: 50%;
+  z-index: 500;
 }
 @media (min-width: 35em) {
   #home {
