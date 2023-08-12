@@ -29,6 +29,29 @@ const { t } = useI18n();
 
 <style scoped>
 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0.5rem;
   background: var(--color-secondary);
+}
+li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  /* justify-items: center; */
+  /* text-align: justify; */
+  padding: 0.5rem;
+}
+.skill-head {
+  text-align: center;
+  /* display: flex; */
+  /* justify-self: center; */
+  /* width: min-content; */
+  text-wrap: balance;
+}
+.skill-desc {
+  text-align: justify;
 }
 </style>

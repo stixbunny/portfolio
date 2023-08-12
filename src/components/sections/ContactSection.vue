@@ -16,5 +16,9 @@ const { t } = useI18n();
 </template>
 
 <style scoped>
-
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
 </style>
