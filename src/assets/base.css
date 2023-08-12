@@ -43,6 +43,30 @@
   --color-accent: var(--dark-accent);
 }
 
+:root {
+  --switch-container-width: 45px;
+  --max-width-site: 1232px;
+  --max-width-content: 1200px;
+
+  --switch-font-size: 0.9rem;
+  --section-row-gap: 1rem;
+}
+
+@media (min-width: 560px) {
+  :root {
+    --font-small: clamp(0.7rem, 0.5333rem + 0.4762vw, 0.9rem);
+    --font-normal: clamp(0.9rem, 0.65rem + 0.7143vw, 1.2rem);
+    --font-subheading: clamp(1.2rem, 1.0333rem + 0.4762vw, 1.4rem);
+    --font-heading: clamp(1.5rem, 1.25rem + 0.7143vw, 1.8rem);
+    --font-l: clamp(1.7rem, -0.2167rem + 5.4762vw, 2.2rem);
+    --font-xl: clamp(2.5rem, 0.4167rem + 5.9524vw, 5rem);
+    --font-xxl: clamp(5.5rem, 1.75rem + 10.7143vw, 10rem);
+
+    --section-row-gap: clamp(1rem, -0.6667rem + 4.7619vw, 3rem);
+    --section-content-margin: clamp(0rem, -2.5rem + 7.1429vw, 3rem);
+  }
+}
+
 *,
 *::before,
 *::after {
