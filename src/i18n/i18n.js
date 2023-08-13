@@ -32,6 +32,9 @@ const messages = {
       problemsolving: 'Problem Solving',
       problemsolvingdesc:
         "I'm a thinker at heart and I love to spend time trying to solve new challenges. I've been doing it to make it where I am today and I'll keep doing it in the future.",
+      creativity: 'Creativity',
+      creativitydesc:
+        "I've always been a creative person. I just love art. Be it painting, drawing, photographing, arts and crafts... and as of late, website designing. I like expressing myself this way.",
     },
     portfolio: {
       title: "Projects I've done",
@@ -76,6 +79,10 @@ const messages = {
       problemsolving: 'Resolución de problemas',
       problemsolvingdesc:
         'Soy en escencia un pensador y me encanta pasar mi tiempo resolviendo nuevos desafíos. Lo he estado haciendo para llegar donde estoy y lo seguiré haciendo en el futuro.',
+      creativity: 'Creatividad',
+      creativitydesc:
+        "Siempre he sido una persona creativa. Simplemente me encanta el arte. Ya sea pintando, dibujando, fotografiando, realizando manualidades... y ahora último, diseñando páginas web. Me gusta expresarme de esta forma.",
+        
     },
     portfolio: {
       title: 'Proyectos que he realizado',

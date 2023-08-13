@@ -46,6 +46,16 @@ const { t } = useI18n();
             <div class="skill-head">{{ t('about.problemsolving') }}</div>
             <div class="skill-desc">{{ t('about.problemsolvingdesc') }}</div>
           </li>
+          <li>
+            <div class="icon">
+              <svg class="round-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="50" />
+              </svg>
+              <Icon icon="mdi:art" />
+            </div>
+            <div class="skill-head">{{ t('about.creativity') }}</div>
+            <div class="skill-desc">{{ t('about.creativitydesc') }}</div>
+          </li>
         </ul>
       </div>
     </div>
@@ -145,6 +155,9 @@ svg:not(:first-child) {
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  li {
+    grid-template-rows: auto auto 1fr;
   }
 }
 </style>
