@@ -86,10 +86,10 @@ const messages = {
       detailoriented: 'Orientado al Detalle',
       detailorienteddesc:
         'Reviso a fondo mi propio código para asegurarme que todo esté funcionando acorde y de la mejor forma posible. Es algo de lo cual estoy orgulloso de poder cumplir.',
-      research: 'Busqueda de Información',
+      research: 'Búsqueda de Información',
       researchdesc:
         'Como todo buen programador soy muy bueno buscando soluciones y encontrando respuestas... ¡Y me gusta hacerlo! Ya sea con documentación o buscando una mejor forma de hacer las cosas, puedes contar conmigo.',
-      problemsolving: 'Resolución de problemas',
+      problemsolving: 'Resolución de Problemas',
       problemsolvingdesc:
         'Soy en escencia un pensador y me encanta pasar mi tiempo resolviendo nuevos desafíos. Lo he estado haciendo para llegar donde estoy y lo seguiré haciendo en el futuro.',
       creativity: 'Creatividad',

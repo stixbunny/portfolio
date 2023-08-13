@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   color-scheme: light dark;
 
@@ -88,9 +90,7 @@ body {
     background-color 0.3s;
   line-height: 1.6;
   font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
+    'Rubik',
     'Segoe UI',
     Roboto,
     Oxygen,

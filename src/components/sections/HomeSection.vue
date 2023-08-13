@@ -55,6 +55,7 @@ h1 {
   font-size: var(--font-l);
   line-height: 1;
   text-wrap: balance;
+  text-align: center;
 }
 span {
   display: block;
@@ -132,6 +133,16 @@ img {
     grid-column: 2 / 3;
     justify-self: center;
     position: relative;
+  }
+}
+@media (min-width: 60em) {
+  span:first-child {
+    display: inline;
+    text-align: center;
+  }
+  span:nth-child(2) {
+    display: inline;
+    text-align: center;
   }
 }
 </style>

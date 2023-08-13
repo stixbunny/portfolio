@@ -136,7 +136,7 @@ li {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* width: 50%; */
+  width: 70%;
   /* max-height: 50%; */
   /* margin-block: 2rem; */
   color: var(--color-accent);
@@ -158,6 +158,13 @@ img {
   align-items: center;
   gap: 1rem;
   font-size: var(--font-small);
+  font-style: italic;
+}
+a {
+  color: var(--color-text) !important;
+}
+a:hover {
+  color: var(--color-accent) !important;
 }
 .made-with {
   display: flex;

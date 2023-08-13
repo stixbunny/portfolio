@@ -28,9 +28,6 @@ ul {
   justify-content: space-around;
   align-content: center;
 }
-li {
-  /* flex-basis: 20%; */
-}
 a {
   display: flex;
   flex-direction: column;
@@ -44,5 +41,10 @@ svg {
 }
 span {
   color: var(--color-text);
+}
+@media (min-width: 35rem) {
+  ul {
+    padding-inline: calc(var(--section-row-gap) * 7);
+  }
 }
 </style>
