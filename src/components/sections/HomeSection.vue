@@ -109,7 +109,7 @@ svg {
   scale: 80%;
   display: block;
   margin: auto;
-  border: 1px solid var(--color-text);
+  /* border: 1px solid var(--color-text); */
   border-radius: 50%;
   fill: var(--color-primary);
   z-index: -1;

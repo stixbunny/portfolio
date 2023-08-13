@@ -21,7 +21,7 @@ const url = "https://github.com/stixbunny/portfolio";
 footer {
   margin: 0 auto;
   background-color: var(--color-secondary);
-  border-block:1px solid var(--color-text);
+  /* border-block:1px solid var(--color-text); */
 }
 div {
   text-align: right;
