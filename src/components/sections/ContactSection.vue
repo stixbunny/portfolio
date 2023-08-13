@@ -28,7 +28,7 @@ ul {
   align-content: center;
 }
 li {
-  flex-basis: 20%;
+  /* flex-basis: 20%; */
 }
 a {
   display: flex;
@@ -37,8 +37,8 @@ a {
   color: var(--color-accent);
 }
 svg {
-  width: 50%;
-  height: 50%;
+  width: 50px;
+  height: 100%;
   max-width: 300px;
 }
 span {
