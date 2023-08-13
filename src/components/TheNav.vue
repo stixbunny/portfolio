@@ -53,6 +53,7 @@ function toggleMenu() {
 <style scoped>
 header {
   position: sticky;
+  z-index: 1000;
   top: 0;
   background-color: var(--color-secondary);
   /* border-block: 1px solid var(--color-text); */
