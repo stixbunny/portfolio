@@ -60,6 +60,7 @@ console.log(`off text = ${props.offText}`);
   display: flex;
   width: var(--switch-container-width);
   color: var(--light-text) !important;
+  font-size: var(--switch-font-size);
 }
 /* Hidden input checkbox */
 .input {
@@ -81,6 +82,7 @@ console.log(`off text = ${props.offText}`);
   grid-template-columns: 1fr 1fr;
   align-items: center;
   align-content: center;
+  align-self: center;
   justify-items: center;
   position: relative;
   height: var(--switch-size);
