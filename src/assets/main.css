@@ -15,6 +15,7 @@
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: var(--section-row-gap);
 }
 
@@ -28,16 +29,17 @@ a:visited {
 section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: var(--section-row-gap);
 }
 section > h1 {
-  max-width: calc(var(--max-width-content)* 0.6);
   font-size: var(--font-heading);
   text-wrap: balance;
   background: var(--color-primary);
   border-radius: 1000px;
-  /* border: 1px solid var(--color-text); */
-  padding: 0.2rem 0.5rem 0.4rem 1rem;
+  padding-left: max(1rem, calc(var(--section-content-margin) * 2));
+  padding-block: 0.2rem;
+  width: 100%;
 }
 section:not(:first-child) > :not(:first-child) {
   margin-inline: var(--section-content-margin);

@@ -62,8 +62,7 @@ const { t } = useI18n();
 .half-col {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 p {
@@ -147,23 +146,5 @@ svg:not(:first-child) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  /* li {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-      'left right-up'
-      'left right-down';
-  }
-  .icon {
-    grid-area: left;
-    width: 80%;
-  }
-  .skill-head {
-    grid-area: right-up;
-  }
-  .skill-desc {
-    grid-area: right-down;
-  } */
 }
 </style>
