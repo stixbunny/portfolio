@@ -125,8 +125,8 @@ svg:not(:first-child) {
 @media (min-width: 35em) and (max-width: 50em) {
   li {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
       'left right-up'
       'left right-down';
