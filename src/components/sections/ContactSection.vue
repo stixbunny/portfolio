@@ -8,6 +8,7 @@ const { t } = useI18n();
 <template>
   <section id="contact">
     <h1>{{ t('contact.title') }}</h1>
+    <h2>{{ t('contact.subheading') }}</h2>
     <ul>
       <li><a href=""><Icon icon="fa6-brands:linkedin" /><span>LinkedIn</span></a></li>
       <li><a href=""><Icon icon="fa6-brands:square-github" /><span>GitHub</span></a></li>

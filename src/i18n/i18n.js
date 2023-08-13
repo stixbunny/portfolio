@@ -40,7 +40,8 @@ const messages = {
       title: "Projects I've done",
     },
     contact: {
-      title: 'Interested? You can find me around these places',
+      title: 'Interested?',
+      subheading: 'You can find me around these places:',
     },
     footer: {
       created: 'Made with Vue, Vue-i18n, and brought to you by Milenko Castillo.',
@@ -88,7 +89,8 @@ const messages = {
       title: 'Proyectos que he realizado',
     },
     contact: {
-      title: '¿Interesado? Puedes encontrarme por aquí',
+      title: '¿Interesado?',
+      subheading: 'Puedes encontrarme por aquí:',
     },
     footer: {
       created: 'Hecho con Vue, Vue-i18n, y traido hasta ti por Milenko Castillo.',
