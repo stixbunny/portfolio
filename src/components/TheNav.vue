@@ -149,7 +149,7 @@ a:hover::after {
         opacity 0ms 175ms;
     }
     .hamburger-menu :is(.top, .bottom) {
-      y: 45;
+      y: 45px;
     }
     .hamburger-menu .top {
       rotate: 45deg;
