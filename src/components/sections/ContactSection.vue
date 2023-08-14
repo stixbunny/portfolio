@@ -52,7 +52,7 @@ span {
 a:hover {
   color: var(--color-primary);
 }
-@media (min-width: 35rem) {
+@media (min-width: 560px) {
   ul {
     padding-inline: calc(var(--section-row-gap) * 7);
   }

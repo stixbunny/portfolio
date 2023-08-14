@@ -8,23 +8,13 @@ const { t } = useI18n({ useScope: 'global' });
 <template>
   <section id="home">
     <div id="title">
-      <i18n-t keypath="home.welcome" tag="h1" scope="global">
-        <template #welcome1>
-          <span>{{ t('home.welcome1') }}</span>
-        </template>
-        <template #welcome2>
-          <span>{{ t('home.welcome2') }}</span>
-        </template>
-        <template #name>
-          <span id="my-name">{{ t('home.milenko') }}</span>
-        </template>
-        <template #welcome3>
-          <span>{{ t('home.welcome3') }}</span>
-        </template>
-        <template #title>
-          <span id="my-title">{{ t('home.webdeveloper') }}</span>
-        </template>
-      </i18n-t>
+      <h1>
+        <span>{{ t('home.welcome1') }}</span>
+        <span>{{ t('home.welcome2') }}</span>
+        <span id="my-name">{{ t('home.milenko') }}</span>
+        <span>{{ t('home.welcome3') }}</span>
+        <span id="my-title">{{ t('home.webdeveloper') }}</span>
+      </h1>
     </div>
     <div id="profile-pic">
       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +112,7 @@ img {
   border-radius: 50%;
   z-index: 500;
 }
-@media (min-width: 35em) {
+@media (min-width: 560px) {
   #home {
     grid-template-columns: 2fr 1fr;
   }
@@ -136,7 +126,7 @@ img {
     position: relative;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 1085px) {
   span:first-child {
     display: inline;
     text-align: center;

@@ -194,7 +194,7 @@ a:hover {
 .li-desc {
   text-align: justify;
 }
-@media (min-width: 35em) and (max-width: 50em) {
+@media (min-width: 560px) and (max-width: 750px) {
   li {
     display: grid;
     grid-template-columns: 50% auto;
@@ -218,7 +218,7 @@ a:hover {
     grid-area: right-down;
   }
 }
-@media (min-width: 50em) {
+@media (min-width: 750px) {
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;

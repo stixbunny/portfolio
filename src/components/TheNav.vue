@@ -107,7 +107,7 @@ a:hover::after {
   flex-direction: row;
   gap: var(--gap);
 }
-@media (max-width: 35em) {
+@media (max-width: 560px) {
   header {
     padding-block: 1.75rem !important;
     display: flex;
