@@ -78,7 +78,6 @@ function switchValue() {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  align-content: center;
   align-self: center;
   justify-items: center;
   position: relative;
