@@ -18,7 +18,7 @@
   --dark-accent: #feebff;
 
   --font-small: 0.7rem;
-  --font-normal: 0.9rem;
+  --font-normal: 14px;
   --font-subheading: 1.2rem;
   --font-heading: 1.5rem;
   --font-l: 1.7rem;
@@ -57,7 +57,7 @@
 @media (min-width: 560px) {
   :root {
     --font-small: clamp(0.7rem, 0.5333rem + 0.4762vw, 0.9rem);
-    --font-normal: clamp(0.9rem, 0.65rem + 0.7143vw, 1.2rem);
+    --font-normal: clamp(14px, 0.6146rem + 0.744vw, 19px);
     --font-subheading: clamp(1.2rem, 1.0333rem + 0.4762vw, 1.4rem);
     --font-heading: clamp(1.5rem, 1.25rem + 0.7143vw, 1.8rem);
     --font-l: clamp(1.7rem, -0.2167rem + 5.4762vw, 2.2rem);
