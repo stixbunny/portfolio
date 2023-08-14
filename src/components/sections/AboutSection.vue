@@ -149,7 +149,7 @@ svg:not(:first-child) {
     grid-area: right-down;
   }
 }
-@media (min-width: 560px) {
+@media (min-width: 750px) {
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr;

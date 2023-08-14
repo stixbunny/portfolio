@@ -10,9 +10,7 @@ const url = "https://github.com/stixbunny/portfolio";
   <footer>
     <div>
       <p>{{ t('footer.created') }}</p>
-      <i18n-t keypath="footer.learn" tag="p" scope="global">
-        <a :href="url" target="_blank">{{ $t('footer.here') }}</a>
-      </i18n-t>
+      <p>{{ t('footer.learn') }} <a :href="url" target="_blank">{{ $t('footer.here') }}.</a></p> 
     </div>
   </footer>
 </template>
