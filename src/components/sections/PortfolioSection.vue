@@ -26,15 +26,15 @@ const { t } = useI18n();
           <a href="https://github.com/stixbunny/coachfinder">
             {{ t('portfolio.sourcecode') }}
           </a>
-            <div class="made-with">
-              <Icon icon="logos:javascript" />
-              <Icon icon="logos:vue" />
-              <Icon icon="logos:vueuse" />
-              <Icon icon="logos:vitejs" />
-              <Icon icon="logos:nodejs-icon"/>
-              <Icon class="icon-html" icon="logos:html-5" />
-              <Icon class="icon-css" icon="logos:css-3" />
-            </div>
+          <div class="made-with">
+            <Icon icon="logos:javascript" />
+            <Icon icon="logos:vue" />
+            <Icon icon="logos:vueuse" />
+            <Icon icon="logos:vitejs" />
+            <Icon icon="logos:nodejs-icon" />
+            <Icon class="icon-html" icon="logos:html-5" />
+            <Icon class="icon-css" icon="logos:css-3" />
+          </div>
         </div>
         <div class="li-desc">{{ t('portfolio.coachfinderdesc') }}</div>
       </li>
@@ -49,14 +49,14 @@ const { t } = useI18n();
           <a href="https://github.com/stixbunny/fcc-random-quote-machine-vite-react">
             {{ t('portfolio.sourcecode') }}
           </a>
-            <div class="made-with">
-              <Icon icon="logos:javascript" />
-              <Icon icon="logos:react" />
-              <Icon icon="logos:vitejs" />
-              <Icon icon="logos:nodejs-icon"/>
-              <Icon class="icon-html" icon="logos:html-5" />
-              <Icon class="icon-css" icon="logos:css-3" />
-            </div>
+          <div class="made-with">
+            <Icon icon="logos:javascript" />
+            <Icon icon="logos:react" />
+            <Icon icon="logos:vitejs" />
+            <Icon icon="logos:nodejs-icon" />
+            <Icon class="icon-html" icon="logos:html-5" />
+            <Icon class="icon-css" icon="logos:css-3" />
+          </div>
         </div>
         <div class="li-desc">{{ t('portfolio.randomquotedesc') }}</div>
       </li>
@@ -71,15 +71,15 @@ const { t } = useI18n();
           <a href="https://github.com/stixbunny/fcc-25-5-clock-vite-react-typescript">
             {{ t('portfolio.sourcecode') }}
           </a>
-            <div class="made-with">
-              <Icon icon="logos:javascript" />
-              <Icon icon="logos:typescript-icon" />
-              <Icon icon="logos:react" />
-              <Icon icon="logos:vitejs" />
-              <Icon icon="logos:nodejs-icon"/>
-              <Icon class="icon-html" icon="logos:html-5" />
-              <Icon class="icon-css" icon="logos:css-3" />
-            </div>
+          <div class="made-with">
+            <Icon icon="logos:javascript" />
+            <Icon icon="logos:typescript-icon" />
+            <Icon icon="logos:react" />
+            <Icon icon="logos:vitejs" />
+            <Icon icon="logos:nodejs-icon" />
+            <Icon class="icon-html" icon="logos:html-5" />
+            <Icon class="icon-css" icon="logos:css-3" />
+          </div>
         </div>
         <div class="li-desc">{{ t('portfolio.pomodoroclockdesc') }}</div>
       </li>
@@ -94,14 +94,14 @@ const { t } = useI18n();
           <a href="https://github.com/stixbunny/fcc-markdown-previewer">
             {{ t('portfolio.sourcecode') }}
           </a>
-            <div class="made-with">
-              <Icon icon="logos:javascript" />
-              <Icon icon="logos:react" />
-              <Icon icon="logos:vitejs" />
-              <Icon icon="logos:nodejs-icon"/>
-              <Icon class="icon-html" icon="logos:html-5" />
-              <Icon class="icon-css" icon="logos:css-3" />
-            </div>
+          <div class="made-with">
+            <Icon icon="logos:javascript" />
+            <Icon icon="logos:react" />
+            <Icon icon="logos:vitejs" />
+            <Icon icon="logos:nodejs-icon" />
+            <Icon class="icon-html" icon="logos:html-5" />
+            <Icon class="icon-css" icon="logos:css-3" />
+          </div>
         </div>
         <div class="li-desc">{{ t('portfolio.markdowneditordesc') }}</div>
       </li>
@@ -157,7 +157,8 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 1rem;
+  justify-content: center;
+  column-gap: 1rem;
   font-size: var(--font-small);
   font-style: italic;
 }
@@ -170,7 +171,7 @@ a:hover {
 .made-with {
   display: flex;
   flex-direction: row;
-  align-items:end;
+  align-items: end;
   gap: 0.5rem;
   font-size: var(--font-normal);
 }
