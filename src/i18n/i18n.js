@@ -118,7 +118,7 @@ const messages = {
     },
     footer: {
       created: 'Hecho con Vue, Vue-i18n, y traído hasta ti por Milenko Castillo.',
-      learn: 'Puedes aprender más acerca de como creé este sitio {0}.',
+      learn: 'Puedes aprender más acerca de como creé este sitio {here}.',
       here: 'aquí',
     },
   },

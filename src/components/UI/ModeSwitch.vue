@@ -39,9 +39,6 @@ function switchValue() {
   state.value = !state.value;
   emits('clicked');
 }
-
-console.log(`on text = ${props.onText}`);
-console.log(`off text = ${props.offText}`);
 </script>
 
 <template>

@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import profileImg from '../../assets/img/profile.png';
 
-const { t } = useI18n();
+const { t } = useI18n({ useScope: 'global' });
 </script>
 
 <template>

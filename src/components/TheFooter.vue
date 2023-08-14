@@ -1,7 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n();
+const { t } = useI18n({ useScope: 'global' });
 
 const url = "https://github.com/stixbunny/portfolio";
 </script>
@@ -10,7 +10,7 @@ const url = "https://github.com/stixbunny/portfolio";
   <footer>
     <div>
       <p>{{ t('footer.created') }}</p>
-      <i18n-t keypath="footer.learn" tag="p" for="here" scope="global">
+      <i18n-t keypath="footer.learn" tag="p" scope="global">
         <a :href="url" target="_blank">{{ $t('footer.here') }}</a>
       </i18n-t>
     </div>

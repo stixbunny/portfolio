@@ -79,6 +79,7 @@ header {
 }
 a {
   font-weight: 500;
+  color: var(--color-text);
   position: relative;
 }
 a:visited {

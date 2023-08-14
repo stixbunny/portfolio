@@ -49,6 +49,9 @@ svg {
 span {
   color: var(--color-text);
 }
+a:hover {
+  color: var(--color-primary);
+}
 @media (min-width: 35rem) {
   ul {
     padding-inline: calc(var(--section-row-gap) * 7);
