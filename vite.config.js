@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/",
   plugins: [
     vue(),
-    VueI18nPlugin({}),
+    VueI18nPlugin(),
   ],
   resolve: {
     alias: {

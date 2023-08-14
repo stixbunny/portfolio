@@ -120,7 +120,6 @@ a:hover::after {
     justify-content: space-around;
     padding: min(30vh, 10rem) 2em;
     background: var(--color-background);
-    /* border-left: 1px solid var(--color-text); */
     --gap: 2rem;
     transform: translateX(100%);
     transition: transform 350ms ease-out;
@@ -133,7 +132,6 @@ a:hover::after {
     position: absolute;
     z-index: 9999;
     background: var(--color-background);
-    /* border: 1px solid var(--color-text); */
     border: none;
     border-radius: 5px;
     min-width: min-content;

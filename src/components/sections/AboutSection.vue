@@ -8,12 +8,11 @@ const { t } = useI18n();
 <template>
   <section id="about">
     <h1>{{ t('about.title') }}</h1>
-    <div class="grid-container">
-      <div class="half-col one">
+      <div class="subsection">
         <p>{{ t('about.description1') }}</p>
         <p>{{ t('about.description2') }}</p>
       </div>
-      <div class="half-col two">
+      <div class="subsection">
         <h2>{{ t('about.amongsoftskills') }}</h2>
         <ul>
           <li>
@@ -58,7 +57,6 @@ const { t } = useI18n();
           </li>
         </ul>
       </div>
-    </div>
   </section>
 </template>
 
@@ -69,7 +67,7 @@ const { t } = useI18n();
   grid-template-columns: 1fr;
   row-gap: var(--section-row-gap);
 }
-.half-col {
+.sub-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +92,7 @@ li {
   gap: 1rem;
   background: var(--color-secondary);
   border-radius: 1rem;
-  z-index: -1;
+  z-index: -2;
 }
 .icon {
   align-self: center;
@@ -103,7 +101,6 @@ li {
   justify-content: center;
   position: relative;
   width: 50%;
-  max-height: 50%;
   margin-block: 2rem;
   color: var(--color-accent);
 }
@@ -121,6 +118,7 @@ svg:not(:first-child) {
   width: 50%;
   height: 50%;
   max-width: 200px;
+  z-index: 0;
 }
 .skill-head {
   text-align: center;
