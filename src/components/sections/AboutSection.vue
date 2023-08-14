@@ -67,7 +67,7 @@ const { t } = useI18n();
   grid-template-columns: 1fr;
   row-gap: var(--section-row-gap);
 }
-.sub-section {
+.subsection {
   display: flex;
   flex-direction: column;
   align-items: center;
