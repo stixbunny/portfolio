@@ -1,5 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
+import profileImg from '../../assets/img/profile.png';
 
 const { t } = useI18n();
 </script>
@@ -29,7 +30,7 @@ const { t } = useI18n();
       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <circle cx="50" cy="50" r="50" />
       </svg>
-      <img src="../../assets/img/profile.png" alt="Milenko Castillo profile picture." />
+      <img :src="profileImg" alt="Milenko Castillo profile picture." />
     </div>
   </section>
 </template>
@@ -151,8 +152,8 @@ img {
 [color-scheme='light'] {
   #my-name,
   #my-title {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--color-text);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-text);
   }
 }
 </style>

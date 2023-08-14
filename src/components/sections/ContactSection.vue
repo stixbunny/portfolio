@@ -10,9 +10,9 @@ const { t } = useI18n();
     <h1>{{ t('contact.title') }}</h1>
     <h2>{{ t('contact.subheading') }}</h2>
     <ul>
-      <li><a href=""><Icon icon="fa6-brands:linkedin" /><span>LinkedIn</span></a></li>
-      <li><a href=""><Icon icon="fa6-brands:square-github" /><span>GitHub</span></a></li>
-      <li><a href=""><Icon icon="icomoon-free:mail" /><span>Mail</span></a></li>
+      <li><a href="https://www.linkedin.com/in/stixbunny/"><Icon icon="fa6-brands:linkedin" /><span>LinkedIn</span></a></li>
+      <li><a href="https://github.com/stixbunny"><Icon icon="fa6-brands:square-github" /><span>GitHub</span></a></li>
+      <li class="smaller-icon-li"><a href="mailto:milenko.castillo@gmail.com"><Icon class="smaller-icon" icon="icomoon-free:mail" /><span>Mail</span></a></li>
     </ul>
   </section>
 </template>
@@ -26,7 +26,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
+  align-items: baseline;
 }
 a {
   display: flex;
@@ -38,6 +38,13 @@ svg {
   width: 50px;
   height: 100%;
   max-width: 300px;
+}
+.smaller-icon {
+  transform: scale(1.05);
+  margin: 0.2rem;
+}
+.smaller-icon-li {
+  align-self: end;
 }
 span {
   color: var(--color-text);
