@@ -17,13 +17,13 @@ const { t } = useI18n();
     <ul>
       <li>
         <div class="img">
-          <a href="https://stixbunny.github.io/coach-finder/coaches">
+          <a href="https://stixbunny.github.io/coach-finder/coaches" target="_blank">
             <img :src="coachFinder" alt="coach finder project" />
           </a>
         </div>
         <div class="li-title">{{ t('portfolio.coachfinder') }}</div>
         <div class="li-subtitle">
-          <a href="https://github.com/stixbunny/coachfinder">
+          <a href="https://github.com/stixbunny/coachfinder" target="_blank">
             {{ t('portfolio.sourcecode') }}
           </a>
           <div class="made-with">
@@ -40,13 +40,19 @@ const { t } = useI18n();
       </li>
       <li>
         <div class="img">
-          <a href="https://stixbunny.github.io/fcc-random-quote-machine-vite-react/">
+          <a
+            href="https://stixbunny.github.io/fcc-random-quote-machine-vite-react/"
+            target="_blank"
+          >
             <img :src="randomQuote" alt="coach finder project" />
           </a>
         </div>
         <div class="li-title">{{ t('portfolio.randomquote') }}</div>
         <div class="li-subtitle">
-          <a href="https://github.com/stixbunny/fcc-random-quote-machine-vite-react">
+          <a
+            href="https://github.com/stixbunny/fcc-random-quote-machine-vite-react"
+            target="_blank"
+          >
             {{ t('portfolio.sourcecode') }}
           </a>
           <div class="made-with">
@@ -62,13 +68,19 @@ const { t } = useI18n();
       </li>
       <li>
         <div class="img">
-          <a href="https://stixbunny.github.io/fcc-25-5-clock-vite-react-typescript/">
+          <a
+            href="https://stixbunny.github.io/fcc-25-5-clock-vite-react-typescript/"
+            target="_blank"
+          >
             <img :src="pomodoroClock" alt="coach finder project" />
           </a>
         </div>
         <div class="li-title">{{ t('portfolio.pomodoroclock') }}</div>
         <div class="li-subtitle">
-          <a href="https://github.com/stixbunny/fcc-25-5-clock-vite-react-typescript">
+          <a
+            href="https://github.com/stixbunny/fcc-25-5-clock-vite-react-typescript"
+            target="_blank"
+          >
             {{ t('portfolio.sourcecode') }}
           </a>
           <div class="made-with">
@@ -85,13 +97,13 @@ const { t } = useI18n();
       </li>
       <li>
         <div class="img">
-          <a href="https://stixbunny.github.io/fcc-markdown-previewer/">
+          <a href="https://stixbunny.github.io/fcc-markdown-previewer/" target="_blank">
             <img :src="markdownEditor" alt="coach finder project" />
           </a>
         </div>
         <div class="li-title">{{ t('portfolio.markdowneditor') }}</div>
         <div class="li-subtitle">
-          <a href="https://github.com/stixbunny/fcc-markdown-previewer">
+          <a href="https://github.com/stixbunny/fcc-markdown-previewer" target="_blank">
             {{ t('portfolio.sourcecode') }}
           </a>
           <div class="made-with">
