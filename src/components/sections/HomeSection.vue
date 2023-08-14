@@ -1,6 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
-import profileImg from '../../assets/img/profile.png';
+import profileImg from '../../assets/img/profile.webp';
 
 const { t } = useI18n({ useScope: 'global' });
 </script>

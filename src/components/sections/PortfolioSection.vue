@@ -1,9 +1,9 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
-import coachFinder from '../../assets/img/coachfinder.png';
-import randomQuote from '../../assets/img/randomquote.png';
-import pomodoroClock from '../../assets/img/pomodoroclock.png';
-import markdownEditor from '../../assets/img/markdowneditor.png';
+import coachFinder from '../../assets/img/coachfinder.webp';
+import randomQuote from '../../assets/img/randomquote.webp';
+import pomodoroClock from '../../assets/img/pomodoroclock.webp';
+import markdownEditor from '../../assets/img/markdowneditor.webp';
 import { Icon } from '@iconify/vue';
 
 const { t } = useI18n();
