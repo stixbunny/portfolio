@@ -155,7 +155,8 @@ img {
 .li-subtitle {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: baseline;
   gap: 1rem;
   font-size: var(--font-small);
   font-style: italic;
