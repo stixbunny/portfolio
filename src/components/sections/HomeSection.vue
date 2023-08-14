@@ -9,19 +9,19 @@ const { t } = useI18n({ useScope: 'global' });
   <section id="home">
     <div id="title">
       <i18n-t keypath="home.welcome" tag="h1" scope="global">
-        <template v-slot:welcome1>
+        <template #welcome1>
           <span>{{ t('home.welcome1') }}</span>
         </template>
-        <template v-slot:welcome2>
+        <template #welcome2>
           <span>{{ t('home.welcome2') }}</span>
         </template>
-        <template v-slot:name>
+        <template #name>
           <span id="my-name">{{ t('home.milenko') }}</span>
         </template>
-        <template v-slot:welcome3>
+        <template #welcome3>
           <span>{{ t('home.welcome3') }}</span>
         </template>
-        <template v-slot:title>
+        <template #title>
           <span id="my-title">{{ t('home.webdeveloper') }}</span>
         </template>
       </i18n-t>
