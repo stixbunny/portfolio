@@ -22,7 +22,7 @@ const messages = {
         "My name is Milenko Castillo, I'm 31 years old, I'm from Santiago, Chile and I studied Software Engineering. I've been into self-thought web development for about a year and I'm trying to get into the industry to show what I can do. I'm a dedicated person with a knack for learning new things and I'd love to work with you.",
       description2:
         "I've completed several of courses within and outside the area, and I'd love to keep on perfecting my skills with technologies throughout the web development spectrum. In the near future, I'd like to learn Go and SvelteKit. I don't have much working experience but I do have the motivation to keep on learning and find a place to put into practice what I know. ",
-      amongsoftskills: 'Among the soft skills I can provide to you are:',
+      amongsoftskills: 'Among the soft skills you can find in my work are:',
       detailoriented: 'Detail-Oriented',
       detailorienteddesc:
         "I thoroughly debug my code and make sure everything is working accordingly and as well as it can. It's something I'm proud of being able to deliver.",
@@ -82,7 +82,7 @@ const messages = {
         'Mi nombre es Milenko Castillo, tengo 31 años, soy de Santiago de Chile y estoy egresado de Ingeniería de Ejecución Informática. He estudiado de forma autodidacta desarrollo web desde hace más de un año y estoy intentando entrar a la industria para dar lo mejor de mí. Soy una persona dedicada, con un gusto por aprender cosas nuevas y me encantaría trabajar contigo.',
       description2:
         'He realizado una variedad de cursos en el área y fuera de ella, y me gustaría seguir perfeccionando en tecnologías utilizadas en todo el espectro de desarrollo. En el futuro cercano me gustaría aprender de Go y SvelteKit. No tengo mucha experiencia laboral, pero sí muchas ganas de seguir aprendiendo y encontrar un lugar donde retribuir lo que sé.',
-      amongsoftskills: 'Entre las competencias que puedo aportar están:',
+      amongsoftskills: 'Entre las competencias que encontrarás en mi trabajo están:',
       detailoriented: 'Orientado al Detalle',
       detailorienteddesc:
         'Reviso a fondo mi propio código para asegurarme que todo esté funcionando acorde y de la mejor forma posible. Es algo de lo cual estoy orgulloso de poder cumplir.',
