@@ -22,9 +22,10 @@ main {
 
 a {
   text-decoration: none;
+  color: var(--color-text);
 }
 a:visited {
-  color: inherit;
+  color: var(--color-text);
 }
 
 section {
