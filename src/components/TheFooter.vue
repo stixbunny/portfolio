@@ -17,11 +17,10 @@ const url = "https://github.com/stixbunny/portfolio";
 
 <style scoped>
 footer {
-  margin: 0 auto;
   background-color: var(--color-secondary);
-  /* border-block:1px solid var(--color-text); */
 }
 div {
+  margin: 0 auto;
   text-align: right;
 }
 p {
