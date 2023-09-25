@@ -1,0 +1,60 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+#app > * > * {
+  max-width: var(--max-width-content);
+  padding-inline: 1rem;
+}
+#app > * {
+  padding-block: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--section-row-gap);
+  margin-top: var(--section-row-gap);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+a:visited {
+  color: var(--color-text);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--section-row-gap);
+  width: 100%;
+}
+section > h1 {
+  font-size: var(--font-heading);
+  text-wrap: balance;
+  background: var(--color-primary);
+  border-radius: 1000px;
+  padding-left: max(1rem, calc(var(--section-content-margin) * 2));
+  padding-block: 0.2rem;
+  width: 100%;
+}
+section:not(:first-child) > :not(:first-child) {
+  margin-inline: var(--section-content-margin);
+}
+
+h2 {
+  text-align: center;
+  font-size: var(--font-subheading);
+}
+
+@media (max-width: 35em) {
+  section > h1 {
+    text-align: center;
+  }
+}
