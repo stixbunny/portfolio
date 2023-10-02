@@ -4,6 +4,7 @@ import coachFinder from '../../assets/img/coachfinder.webp';
 import randomQuote from '../../assets/img/randomquote.webp';
 import pomodoroClock from '../../assets/img/pomodoroclock.webp';
 import markdownEditor from '../../assets/img/markdowneditor.webp';
+import smockify from '../../assets/img/smockify.webp';
 import { Icon } from '@iconify/vue';
 
 const { t } = useI18n();
@@ -12,7 +13,31 @@ const { t } = useI18n();
 <template>
   <section id="portfolio">
     <h1>{{ t('portfolio.title') }}</h1>
-    <p>{{ t('portfolio.temporary') }}</p>
+    <ul>
+      <li>
+        <div class="img">
+          <a href="https://stixbunny.github.io/smockify/" target="_blank">
+            <img :src="smockify" alt="smockify project" />
+          </a>
+        </div>
+        <div class="li-title">{{ t('portfolio.smockify') }}</div>
+        <div class="li-subtitle">
+          <a href="https://github.com/stixbunny/smockify" target="_blank">
+            {{ t('portfolio.sourcecode') }}
+          </a>
+          <div class="made-with">
+            <Icon icon="devicon:typescript" />
+            <Icon icon="logos:vue" />
+            <Icon icon="logos:vueuse" />
+            <Icon icon="logos:vitejs" />
+            <Icon icon="logos:nodejs-icon" />
+            <Icon class="icon-html" icon="logos:html-5" />
+            <Icon class="icon-css" icon="logos:css-3" />
+          </div>
+        </div>
+        <div class="li-desc">{{ t('portfolio.smockifydesc') }}</div>
+      </li>
+    </ul>
     <h2>{{ t('portfolio.secondary') }}</h2>
     <ul>
       <li>
@@ -85,7 +110,7 @@ const { t } = useI18n();
           </a>
           <div class="made-with">
             <Icon icon="logos:javascript" />
-            <Icon icon="logos:typescript-icon" />
+            <Icon icon="devicon:typescript" />
             <Icon icon="logos:react" />
             <Icon icon="logos:vitejs" />
             <Icon icon="logos:nodejs-icon" />
