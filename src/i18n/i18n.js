@@ -107,7 +107,7 @@ const messages = {
       sourcecode: 'código fuente',
       main: "Estos tomaron algo de tiempo:",
       smockify: 'Smockify - una copia de Spotify',
-      smockifydesc: 'Realicé este proyecto como una forma de enfocarme en el desarrollo front-end. Es una copia de la interfaz usuaria de Spotify para ordenadores. Mi objetivo inicial era más ambicioso, pero tuve que reducirla escala del proyecto y por ende hay cosas aún sin completar.',
+      smockifydesc: 'Realicé este proyecto como una forma de enfocarme en el desarrollo front-end. Es una copia de la interfaz usuaria de Spotify para ordenadores. Mi objetivo inicial era más ambicioso, pero tuve que reducir la escala del proyecto y por ende hay cosas aún sin completar.',
       concentration: 'Memorice',
       concentrationdesc: 'Como parte de una prueba técnica, me encargaron hacer un juego de memorice y este es el resultado. Los jugadores deben ingresar su nombre y pueden jugar varias sesiones con seis imágenes aleatorias de perros de una API. Aprendí Tailwindcss en el proceso.',
       secondary: 'Estos los realicé mientras aprendía:',
