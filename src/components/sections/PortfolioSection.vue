@@ -5,6 +5,7 @@ import randomQuote from '../../assets/img/randomquote.webp';
 import pomodoroClock from '../../assets/img/pomodoroclock.webp';
 import markdownEditor from '../../assets/img/markdowneditor.webp';
 import smockify from '../../assets/img/smockify.webp';
+import concentration from '../../assets/img/concentration.webp';
 import { Icon } from '@iconify/vue';
 
 const { t } = useI18n();
@@ -36,6 +37,29 @@ const { t } = useI18n();
           </div>
         </div>
         <div class="li-desc">{{ t('portfolio.smockifydesc') }}</div>
+      </li>
+      <li>
+        <div class="img">
+          <a href="https://stixbunny.github.io/concentration-portfolio/" target="_blank">
+            <img :src="concentration" alt="concentration project" />
+          </a>
+        </div>
+        <div class="li-title">{{ t('portfolio.concentration') }}</div>
+        <div class="li-subtitle">
+          <a href="https://github.com/stixbunny/concentration-portfolio" target="_blank">
+            {{ t('portfolio.sourcecode') }}
+          </a>
+          <div class="made-with">
+            <Icon icon="logos:javascript" />
+            <Icon icon="logos:vue" />
+            <Icon icon="logos:vueuse" />
+            <Icon icon="logos:vitejs" />
+            <Icon icon="logos:nodejs-icon" />
+            <Icon class="icon-html" icon="logos:html-5" />
+            <Icon icon="logos:tailwindcss-icon" />
+          </div>
+        </div>
+        <div class="li-desc">{{ t('portfolio.concentrationdesc') }}</div>
       </li>
     </ul>
     <h2>{{ t('portfolio.secondary') }}</h2>
