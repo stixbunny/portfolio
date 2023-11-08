@@ -202,6 +202,9 @@ li {
   /* margin-block: 2rem; */
   color: var(--color-accent);
 }
+.img > a {
+  width: 100%;
+}
 img {
   width: 100%;
   object-fit: cover;
